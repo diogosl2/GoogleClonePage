@@ -1,0 +1,98 @@
+/* styles.css */
+
+/* Centraliza o conteúdo verticalmente */
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 160px;
+}
+
+.navbar .navbar-brand {
+    font-size: 24px;
+}
+
+.navbar-nav .nav-link {
+    margin-right: 20px;
+    /* display: 80px; */ /* Esta propriedade não faz sentido, removida */
+    align-items: center; /* Ajustado para align-items */
+}
+
+.input-group-append .btn {
+    margin-left: 10px;
+}
+
+.form-inline .form-control {
+    width: 500px; /* ou o tamanho desejado */
+}
+
+.centered-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.margin-top {
+    margin-top: 100px;
+}
+
+.right-side {
+    display: flex;
+    justify-content: flex-end; /* Ajustado para alinhar à direita */
+}
+
+.rounded-circle {
+    background-color: #f3f1f1; /* Cor de fundo para visualização */
+    border: 0.5px solid #f3f0f0; /* Borda para visualização */
+}
+
+.navbar-nav .nav-link.custom-link {
+    color: black; /* Define a cor preta para os links */
+}
+
+.navbar-nav .nav-link.custom-link:hover {
+    color: #191ed9; /* Define uma cor diferente ao passar o mouse */
+}
+
+/* Ajusta o tamanho da barra de pesquisa */
+.input-group {
+    position: relative; /* Posição relativa para ajustes */
+    width: 600px; /* Ajusta a largura da barra de pesquisa */
+    max-width: 100%; /* Define a largura máxima da barra de pesquisa */
+    margin: 0 auto; /* Centraliza horizontalmente */
+    overflow: visible; /* Esconde o overflow para animação não ultrapassar */
+}
+
+.input-group .form-control {
+    width: 100%; /* Preenche toda a largura disponível */
+    border-radius: 20px; /* Define o raio de arredondamento */
+    border-top-right-radius: 20px; /* Remove o arredondamento no canto superior direito */
+    border-bottom-right-radius: 20px; /* Remove o arredondamento no canto inferior direito */
+    transition: all 0.3s ease; /* Transição suave de 0.3 segundos */
+    box-sizing: border-box; /* Inclui borda e preenchimento no tamanho total */
+}
+
+.input-group-append .btn {
+    border-radius: 20px; /* Define o raio de arredondamento */
+    border-top-left-radius: 20px; /* Remove o arredondamento no canto superior esquerdo */
+    border-bottom-left-radius: 20px; /* Remove o arredondamento no canto inferior esquerdo */
+    transition: all 0.3s ease; /* Transição suave de 0.3 segundos */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Sombra para efeito 3D */
+}
+
+.input-group-append .btn:hover {
+    transform: translateY(-2px); /* Levanta o botão quando hover */
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2); /* Aumenta a sombra quando hover */
+}
+
+.input-group-append .btn:nth-child(1):hover {
+    background-color: #007bff; /* Azul ao passar o mouse para o primeiro botão */
+    border-color: #007bff; /* Cor da borda azul ao passar o mouse para o primeiro botão */
+    color: #fff; /* Cor do texto branca ao passar o mouse para o primeiro botão */
+}
+
+.input-group-append .btn:nth-child(2):hover {
+    background-color: #ffc107; /* Amarelo ao passar o mouse para o segundo botão */
+    border-color: #ffc107; /* Cor da borda amarela ao passar o mouse para o segundo botão */
+    color: #212529; /* Cor do texto escura ao passar o mouse para o segundo botão */
+}
